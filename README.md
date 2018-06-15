@@ -14,6 +14,7 @@ Some basic features
 - separate production and development environment config
 - extract common files around chunks
 - jquery plugins usage
+- build result notifications
 - insert stylesheets and scripts to html file
 - html, css/scss, js/jsx code style quality check ([htmlhint](http://htmlhint.com/) [stylelint](https://stylelint.io/) [eslint](https://eslint.org/docs/user-guide/configuring))
 - build performance improving (thx for v4)
