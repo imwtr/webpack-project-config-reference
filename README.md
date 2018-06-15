@@ -8,6 +8,7 @@ Some basic features
 - extract css files in production mode
 - hot module replacement
 - support dynamic link library for vendor chunks
+- separate production and development environment config
 - extract common files around chunks
 - jquery plugins usage
 - insert stylesheets and scripts to html file
@@ -37,13 +38,13 @@ Adjust it to whatever you like
 | Name               | Description          |
 | --------------     | -------------        |
 | npm run build:dll  | build dll library first, if you have never built it   |
-| npm run build:dev  | build with environment mode in windows system, using HMR  |
+| npm run build:dev  | build with development mode in windows system, using HMR  |
 | npm run build:prod  | build with production mode in unix(linux,os) system  |
-| npm run build:unix:dev  | build with environment mode in windows system, using HMR  |
+| npm run build:unix:dev  | build with development mode in windows system, using HMR  |
 | npm run build:unix:prod  | build with production mode in unix system   |
-| npm run build:dev:https  | build with environment mode in windows system, using https and HMR |
+| npm run build:dev:https  | build with development mode in windows system, using https and HMR |
 | npm run build:prod:https  | build with production mode in unix(linux,os) system, using https  |
-| npm run build:unix:dev:https  | build with environment mode in windows system, using https and HMR  |
+| npm run build:unix:dev:https  | build with development mode in windows system, using https and HMR  |
 | npm run build:unix:prod:https  | build with production mode in unix system, using https   |
 
 
