@@ -9,14 +9,14 @@ Some basic features
 - simple project demo
 - basic support for SASS/ES6/React
 - extract css files in production mode
-- hot module replacement
-- support dynamic link library for vendor chunks
+- [hot module replacement](https://github.com/webpack/webpack-dev-server)
+- support [dynamic link library](https://webpack.js.org/plugins/dll-plugin/) for vendor chunks
 - separate production and development environment config
 - extract common files around chunks
 - jquery plugins usage
 - insert stylesheets and scripts to html file
-- html, css/scss, js/jsx code style quality check
-- build performance improving (ths for v4)
+- html, css/scss, js/jsx code style quality check ([htmlhint](http://htmlhint.com/) [stylelint](https://stylelint.io/) [eslint](https://eslint.org/docs/user-guide/configuring))
+- build performance improving (thx for v4)
 
 ## More detail
 [v3 introduction](http://www.cnblogs.com/imwtr/p/7786204.html)
