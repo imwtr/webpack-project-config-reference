@@ -1,0 +1,79 @@
+{
+    "_comment": [
+        "自定义的HTMLHint配置项",
+        "规则中文 @see https://segmentfault.com/a/1190000013276858",
+        "规则英文 @see https://github.com/yaniswang/HTMLHint/wiki/Rules",
+
+        "使用注释自定义规则 @see https://github.com/yaniswang/HTMLHint/wiki/Usage#cli"
+    ],
+
+    "_comment": "标签名必须小写",
+    "tagname-lowercase": true,
+
+    "_comment": "属性名必须小写",
+    "attr-lowercase": false,
+
+    "_comment": "属性值必须放在双引号中",
+    "attr-value-double-quotes": true,
+
+    "_comment": "属性值一定不可为空",
+    "attr-value-not-empty": false,
+
+    "_comment": "属性值一定不可重复",
+    "attr-no-duplication": true,
+
+    "_comment": "Doctype必须是 HTML 文档的第一行",
+    "doctype-first": false,
+
+    "_comment": "标签必须成对",
+    "tag-pair": true,
+
+    "_comment": "标签必须自封闭",
+    "tag-self-close": false,
+
+    "_comment": "特殊字符必须转义",
+    "spec-char-escape": false,
+
+    "_comment": "ID 属性必须唯一",
+    "id-unique": true,
+
+    "_comment": "src 属性一定不可为空",
+    "src-not-empty": true,
+
+    "_comment": "title 属性必须出现在标签中",
+    "title-require": false,
+
+    "_comment": "img 标签必须包含 alt 属性",
+    "alt-require": true,
+
+    "_comment": "Doctype 必须是 HTML5",
+    "doctype-html5": true,
+
+    "_comment": "ID 和 Class 的命名规则必须统一",
+    "id-class-value": false,
+
+    "_comment": "不该使用样式标签",
+    "style-disabled": false,
+
+    "_comment": "不该使用行内样式",
+    "inline-style-disabled": false,
+
+    "_comment": "不该使用行内脚本",
+    "inline-script-disabled": false,
+
+    "_comment": "空格和制表符一定不可混合在行前",
+    "space-tab-mixed-disabled": "space4",
+
+    "_comment": "ID 和 Class 一定不可使用广告关键词",
+    "id-class-ad-disabled": false,
+
+    "_comment": "href 必须是绝对路径或者相对路径",
+    "href-abs-or-rel": false,
+
+    "_comment": "属性值一定不可使用不安全字符",
+    "attr-unsafe-chars": true,
+
+    "_comment": "script 标签不该使用在头部",
+    "head-script-disabled": false
+}
+
