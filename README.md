@@ -25,7 +25,7 @@ Some basic features
 2. Clone or just download this project locally, and walk into the project
 3. Open the server with `node server`
 4. Walk into the public directory with `cd public`, install the packages we need by `npm i`
-5. Building the project with `npm run build:prod`, full commands list
+5. Building the project with `npm run build:prod`, [full commands list](https://github.com/imwtr/webpack-project-config-reference/blob/master/README.md#commands-list)
 6. Visit `http://localhost:8088/views/home/home.html` with your favorite browser
 7. Adjust configuration in `/public/webpack/webpack.config.js`, now enjoy yourself
 
