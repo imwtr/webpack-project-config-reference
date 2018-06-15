@@ -20,9 +20,9 @@ Some basic features
 - build performance improving (thx for v4)
 
 ## More detail
-[v3 introduction](http://www.cnblogs.com/imwtr/p/7786204.html)
+[v3 config introduction](http://www.cnblogs.com/imwtr/p/7786204.html)
 
-[v4 introduction](https://www.cnblogs.com/imwtr/p/9189670.html)
+[v4 config introduction](https://www.cnblogs.com/imwtr/p/9189670.html)
 
 
 ## Usage
