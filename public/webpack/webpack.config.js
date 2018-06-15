@@ -6,7 +6,7 @@ module.exports = {
     // 项目的svn|git版本分类，仅用于标识进程以快速区分窗口  master（主干）trunk（主干）或 branch（分支）
     versionControl: 'branch',
     // 项目的标识符名称，请使用英文
-    name: 'webpack-config-ref',
+    name: 'webpack-project-config-reference',
     // 项目代码检查设置  一般不改动
     lint: {
         // HtmlHint
