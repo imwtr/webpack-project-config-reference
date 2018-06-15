@@ -36,7 +36,7 @@ Some basic features
 ## Commands list
 Reference by `package.json`, commands are for windows system and scheme is http by default
 
-Add an argument `-- --analysis` after each of commands will enable the [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer), thus you can optimize your build processon further
+Add an argument `-- --analysis` after each of these commands will enable the [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer), thus you can optimize your build processon further
 
 Adjust it to whatever you like
 
