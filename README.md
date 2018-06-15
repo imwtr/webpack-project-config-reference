@@ -9,7 +9,7 @@ Some basic features
 - simple project demo
 - basic support for SASS/ES6/React
 - extract css files in production mode
-- [hot module replacement](https://github.com/webpack/webpack-dev-server)
+- [hot module replacement](https://github.com/webpack/webpack-dev-server), automatically find free port for devServer
 - support [dynamic link library](https://webpack.js.org/plugins/dll-plugin/) for vendor chunks
 - separate production and development environment config
 - extract common files around chunks
@@ -35,6 +35,8 @@ Some basic features
 
 ## Commands list
 Reference by `package.json`, commands are for windows system and scheme is http by default
+
+Add an argument `-- --analysis` after each of commands will enable the [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer), thus you can optimize your build processon further
 
 Adjust it to whatever you like
 
