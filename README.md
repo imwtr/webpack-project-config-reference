@@ -1,4 +1,7 @@
-# webpack-project-config-reference
+
+<img src="https://camo.githubusercontent.com/d18f4a7a64244f703efcb322bf298dcb4ca38856/68747470733a2f2f7765627061636b2e6a732e6f72672f6173736574732f69636f6e2d7371756172652d6269672e737667" width="100px" height="100px">
+
+## webpack-project-config-reference
 A common configuration reference for webpack(4) project, extends from [webpack3](https://github.com/imwtr/webpack-demo)
 
 Some basic features
@@ -15,13 +18,13 @@ Some basic features
 - html, css/scss, js/jsx code style quality check
 - build performance improving (ths for v4)
 
-# More detail
+## More detail
 [v3 introduction](http://www.cnblogs.com/imwtr/p/7786204.html)
 
 [v4 introduction](http://www.cnblogs.com/imwtr/p/7786204.html)
 
 
-# Usage
+## Usage
 1. Make sure that you have `Python2.7` `NodeJS` `NPM` installed and environment variables are correctly set
 2. Clone or just download this project locally, and walk into the project
 3. Open the server with `node server`
@@ -30,7 +33,7 @@ Some basic features
 6. Visit `http://localhost:8088/views/home/home.html` with your favorite browser
 7. Adjust configuration in `/public/webpack/webpack.config.js`, now enjoy yourself
 
-# Commands list
+## Commands list
 Reference by `package.json`, commands are for windows system and scheme is http by default
 
 Adjust it to whatever you like
