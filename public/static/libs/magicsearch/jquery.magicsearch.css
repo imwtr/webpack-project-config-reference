@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+.magicsearch-wrapper *:not(input) {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.magicsearch-wrapper input[disabled] {
+    cursor: not-allowed;
+}
+
+.magicsearch-wrapper input.multi {
+    height: 30px;
+}
+
+.magicsearch-wrapper input.dropdown {
+    height: 30px;
+    padding-right: 24px;
+}
+
+.magicsearch-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.magicsearch-wrapper .multi-items {
+    position:absolute;
+    overflow: hidden;
+}
+
+.magicsearch-wrapper .multi-item {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+    width: 57px;
+    height: 100%;
+    background-color: #d3cfcf;
+    padding-right: 3px;
+    border-radius: 2px;
+    margin-right: 2px;
+}
+.magicsearch-wrapper .multi-item span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: default;
+    flex: 1;
+    text-align: center;
+}
+
+.magicsearch-wrapper .multi-items .multi-item:last-child {
+    margin-right: 0px;
+}
+
+.magicsearch-wrapper .multi-item-close {
+    display: block;
+    position: relative;
+    width: 12px;
+    height: 12px;
+}
+.magicsearch-wrapper .multi-item-close:before,
+.magicsearch-wrapper .multi-item-close:after {
+    content:'';
+    height:2px;
+    width:12px;
+    display:block;
+    background-color:#666;
+    border-radius:2px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    position:absolute;
+    top:5px;
+    left:0px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+
+.magicsearch-wrapper .multi-item-close:after {
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+.magicsearch-wrapper .multi-item-close:hover:before,
+.magicsearch-wrapper .multi-item-close:hover:after {
+    background-color:#333;
+}
+
+.magicsearch-wrapper .multi-item.current {
+    background-color: #e1eaf5;
+    color: #4078c0;
+}
+
+.magicsearch-wrapper .multi-item.current .multi-item-close:before,
+.magicsearch-wrapper .multi-item.current .multi-item-close:after {
+    background-color: #4078c0;
+}
+
+.magicsearch-wrapper .multi-item.current .multi-item-close:hover:before,
+.magicsearch-wrapper .multi-item.current .multi-item-close:hover:after {
+    background-color:#0F63CE;
+}
+
+.magicsearch-wrapper .magicsearch-box {
+    display:none;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 100;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    left: 0;
+}
+
+.magicsearch-wrapper .magicsearch-box.all {
+    overflow-y: auto;
+}
+
+.magicsearch-wrapper .magicsearch-box li {
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    padding-left: 10px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 3px;
+}
+
+.magicsearch-wrapper .magicsearch-box li.enabled {
+    /*color: #3D96C9;*/
+    color: #00c;
+}
+.magicsearch-wrapper .magicsearch-box li.disabled {
+    color: red;
+}
+.magicsearch-wrapper .magicsearch-box li.ishover {
+    background-color: #f6f6f6;
+}
+.magicsearch-wrapper .magicsearch-box li span.keyword {
+    color: #c00;
+    font-weight: bold;
+}
+.magicsearch-wrapper .magicsearch-box .no-result {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: red;
+    padding-left: 10px;
+    text-align: left;
+}
+/*.magicsearch-wrapper .magicsearch-box .loading {
+    height: 30px;
+    padding: 3px 0;
+}
+.magicsearch-wrapper .magicsearch-box .loading img {
+    height: 24px;
+    display: block;
+    margin: auto;
+}*/
+
+.magicsearch-wrapper .magicsearch-arrow {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 24px;
+    cursor: pointer;
+}
+.magicsearch-wrapper .magicsearch-arrow i {
+    position: relative;
+    height: 6px;
+    width: 12px;
+    cursor: pointer;
+    display: block;
+}
+.magicsearch-wrapper .magicsearch-arrow i:before {
+    content: '';
+    height: 0;
+    width: 0;
+    display: block;
+    border: 6px transparent solid;
+    border-bottom-width: 0;
+    border-top-color: #a0a0a0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.magicsearch-wrapper .magicsearch-arrow.disabled {
+    cursor: not-allowed;
+}
+@keyframes arrow-rotate-180 {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(180deg);
+    }
+}
+@keyframes arrow-rotate-360 {
+    from {
+        transform: rotateX(180deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
+.magicsearch-wrapper .magicsearch-arrow.arrow-rotate-180 {
+    animation: arrow-rotate-180 .2s 1 linear;
+}
+.magicsearch-wrapper .magicsearch-arrow.arrow-rotate-360 {
+    animation: arrow-rotate-360 .2s 1 linear;
+}
+.magicsearch-wrapper .magicsearch-arrow.rotate180 {
+    transform: rotateX(180deg);
+}

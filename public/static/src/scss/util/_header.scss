@@ -1,0 +1,15 @@
+@import 'variable';
+@import 'mixin';
+
+.header {
+    &__info {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    &__img {
+        border: none;
+    }
+
+    color: $dark;
+}

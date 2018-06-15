@@ -1,0 +1,23 @@
+
+@import 'util/header';
+@import 'util/mixin';
+
+
+.header {
+    &__info {
+        @include height-line-height(100px);
+
+        font-weight: 400;
+
+    }
+
+    &__img {
+        border: none;
+
+        border-radius: 0;
+    }
+}
+
+.bg-input {
+    background-image: url("../../imgs/kl/scrat.png");
+}

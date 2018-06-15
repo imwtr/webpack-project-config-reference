@@ -1,0 +1,1 @@
+(window["webpack-config-refJF"]=window["webpack-config-refJF"]||[]).push([[0],{"9970b9c83c":function(n,o,c){"use strict";function f(){console.log("log from async.js")}c.r(o),c.d(o,"log",function(){return f})}}]);

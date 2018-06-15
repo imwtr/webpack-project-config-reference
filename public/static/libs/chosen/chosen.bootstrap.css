@@ -1,0 +1,31 @@
+/* fix jQuery.chosen 1.0 in Bootstrap 3.1.1 */
+
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+    height: 25px;
+}
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close,
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+    background-position: -48px 0px;
+}
+.chosen-container-single .chosen-single div b {
+    background-position: 0px 0px;
+}
+.chosen-container-single .chosen-single {
+    height: 28px;
+    line-height: 28px;
+}
+.chosen-container-single .chosen-search input[type="text"] {
+    background: white url('chosen-sprite.png') no-repeat 100% -21px;
+    background: url('chosen-sprite.png') no-repeat 100% -21px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
+    background: url('chosen-sprite.png') no-repeat 100% -21px, -webkit-linear-gradient(#eeeeee 1%, #ffffff 15%);
+    background: url('chosen-sprite.png') no-repeat 100% -21px, -moz-linear-gradient(#eeeeee 1%, #ffffff 15%);
+    background: url('chosen-sprite.png') no-repeat 100% -21px, -o-linear-gradient(#eeeeee 1%, #ffffff 15%);
+    background: url('chosen-sprite.png') no-repeat 100% -21px, linear-gradient(#eeeeee 1%, #ffffff 15%);
+}
+.search-field {
+    height: 27px;
+    line-height: 27px;
+}
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+    padding: 0 5px;
+}
