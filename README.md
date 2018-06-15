@@ -21,7 +21,7 @@ Some basic features
 ## More detail
 [v3 introduction](http://www.cnblogs.com/imwtr/p/7786204.html)
 
-[v4 introduction](http://www.cnblogs.com/imwtr/p/7786204.html)
+[v4 introduction](https://www.cnblogs.com/imwtr/p/9189670.html)
 
 
 ## Usage
