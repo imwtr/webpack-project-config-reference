@@ -17,7 +17,7 @@ Some basic features
 - build result notifications
 - insert stylesheets and scripts to html file
 - html, css/scss, js/jsx code style quality check ([htmlhint](http://htmlhint.com/) [stylelint](https://stylelint.io/) [eslint](https://eslint.org/docs/user-guide/configuring))
-- build performance improving (thx for v4)
+- building performance improving (thx for v4)
 
 ## More detail
 [v3 config introduction](http://www.cnblogs.com/imwtr/p/7786204.html)
@@ -30,7 +30,7 @@ Some basic features
 2. Clone or just download this project locally, and walk into the project
 3. Open the server with `node server`
 4. Walk into the public directory with `cd public`, install the packages we need by `npm i`
-5. Building the project with `npm run build:prod`, [full commands list](https://github.com/imwtr/webpack-project-config-reference/blob/master/README.md#commands-list)
+5. Building the project with `npm run build:prod`, [full commands list](https://github.com/imwtr/webpack-project-config-reference#commands-list)
 6. Visit `http://localhost:8088/views/home/home.html` with your favorite browser
 7. Adjust configuration in `/public/webpack/webpack.config.js`, code are well commented by CN, enjoy yourself with source code
 
