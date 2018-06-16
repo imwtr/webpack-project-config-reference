@@ -8,9 +8,9 @@ let path = require('path'),
 
     WDS_SCHEME = process.env.WDS_SCHEME || 'http',
 
-    getFreePort = require('./getFreePortSync'),
+    findFreePort = require('find-free-port-sync'),
 
-    freePort = getFreePort();
+    freePort = findFreePort();
 
 /**
  * 开发环境Webpack打包配置，整合公共部分
