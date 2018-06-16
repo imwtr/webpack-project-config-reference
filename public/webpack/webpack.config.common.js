@@ -249,7 +249,7 @@ if (process.argv.includes('--analysis')) {
     commonConfig.plugins.push(new BundleAnalyzerPlugin({
         analyzerMode: 'server',
         analyzerHost: '127.0.0.1',
-        analyzerPort: require('./getFreePortSync')(),
+        analyzerPort: require('find-free-port-sync')(),
         reportFilename: 'report.html',
         defaultSizes: 'parsed',
         openAnalyzer: true,
