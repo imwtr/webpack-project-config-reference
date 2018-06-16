@@ -6,7 +6,23 @@
  * 使用注释自定义规则 @see https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md#turning-rules-off-from-within-your-css
  */
 
-let NODE_DIR = 'C:/Users/e470/AppData/Roaming/npm/node_modules/';
+/**
+ * StyleLint的插件需要配置 configBaseDir
+ * 全局的插件安装用于编辑器的使用
+ * 局部的安装用于webpack的使用
+ * @type {String}
+ */
+let NODE_DIR = '/usr/local/lib/node_modules/';
+
+if (process.platform === 'win32') {
+    NODE_DIR = 'C:/Users/e470/AppData/Roaming/npm/node_modules/';
+}
+
+if (process.argv && process.argv.some(item => {
+    return item.includes('webpack.config');
+})) {
+    NODE_DIR = '';
+}
 
 module.exports = {
     // 以此规则集为基础
