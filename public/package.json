@@ -39,6 +39,7 @@
         "expose-loader": "^0.7.5",
         "fast-sass-loader": "^1.4.5",
         "file-loader": "^1.1.11",
+        "find-free-port-sync": "^1.0.0",
         "fs": "~0.0.1",
         "happypack": "^5.0.0",
         "html-loader": "^0.5.1",
