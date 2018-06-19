@@ -28,7 +28,7 @@ let path = require('path'),
     // 当前目录相对于JS输出模块的路径，因大部分资源的生成路径相对于JS输出模块路径
     cwdRalativeOutputPath = path.relative(path.resolve(__dirname, '../', configs.outputPath), __dirname);
 
-process.title = processEntity;
+require('node-bash-title')(processEntity);
 
 console.log(processEntity, '\n');
 
