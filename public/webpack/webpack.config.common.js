@@ -75,7 +75,13 @@ let commonConfig = {
     // 合并优化方式
     optimization: {
         runtimeChunk: {
-            name: 'common'
+            name(entrypoint) {
+                if (configs.commonChunkExcludes.includes(entrypoint.name)) {
+                    return entrypoint.name;
+                }
+
+                return 'common';
+            }
         },
         concatenateModules: true,
         // 设为true会导致lint的检查输出不到文件中
@@ -83,7 +89,7 @@ let commonConfig = {
         splitChunks: {
             chunks(chunk) {
                 // 不需要提取公共代码的模块
-                return !(configs.commonChunkExcludes || []).includes(chunk.name);
+                return !configs.commonChunkExcludes.includes(chunk.name);
             },
             name: 'common',
             minChunks: 2,
