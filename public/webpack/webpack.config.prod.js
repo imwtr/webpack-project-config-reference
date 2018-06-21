@@ -33,7 +33,7 @@ module.exports = merge(commonConfig, {
                     // 设置生成图片的路径名字信息 [path]相对context，outputPath输出的路径，publicPath相应引用的路径
                     name: '[path][name].[ext]?[hash:8]',
                     outputPath: '../',
-                    publicPath: path.resolve(configs.outputPublicPath, '../'),
+                    publicPath: configs.outputPublicPath + '../',
                 }
             }]
         }, {
@@ -44,7 +44,7 @@ module.exports = merge(commonConfig, {
                     // 设置生成字体文件的路径名字信息 [path]相对context，outputPath输出的路径，publicPath相应引用的主路径
                     name: '[path][name].[ext]?[hash:8]',
                     outputPath: '../',
-                    publicPath: path.resolve(configs.outputPublicPath, '../'),
+                    publicPath: configs.outputPublicPath + '../',
                 }
             }],
         }]
