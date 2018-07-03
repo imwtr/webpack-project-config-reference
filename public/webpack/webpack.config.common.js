@@ -8,6 +8,7 @@ let path = require('path'),
     StyleLintPlugin = require('stylelint-webpack-plugin'),
     TimeFixPlugin = require('time-fix-plugin'),
     BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
+    UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
 
     configs = require('./webpack.config.js'),
 
@@ -83,6 +84,12 @@ let commonConfig = {
                 return 'common';
             }
         },
+        minimizer: [
+            new UglifyJsPlugin({
+                cache: true,
+                parallel: true
+            })
+        ],
         concatenateModules: true,
         // 设为true会导致lint的检查输出不到文件中
         noEmitOnErrors: false,
