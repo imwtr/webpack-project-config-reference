@@ -183,6 +183,11 @@ let commonConfig = {
                     minimize: true
                 }
             }, {
+                loader: 'postcss-loader',
+                options: {
+                    // use postcss.config.js
+                }
+            }, {
                 'loader': 'sprite-loader'
             }, {
                 loader: 'sass-loader',
