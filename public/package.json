@@ -4,16 +4,12 @@
     "description": "webpack-project-config-reference",
     "main": "./webpack/webpack.config.dev.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "echo \"Error: no test specified\" &&  exit 1",
         "build:dll": "webpack --config ./webpack/dll/webpack.dll.config.js --mode production",
-        "build:dev": "SET NODE_ENV=development&& webpack-dev-server --config ./webpack/webpack.config.dev.js --color",
-        "build:prod": "SET NODE_ENV=production&& webpack --config ./webpack/webpack.config.prod.js --watch --color",
-        "build:unix:dev": "export NODE_ENV=development && webpack-dev-server --config ./webpack/webpack.config.dev.js --color",
-        "build:unix:prod": "export NODE_ENV=production && webpack --config ./webpack/webpack.config.prod.js --watch --color",
-        "build:dev:https": "SET NODE_ENV=development&& SET WDS_SCHEME=https&& webpack-dev-server --config ./webpack/webpack.config.dev.js --color --https",
-        "build:prod:https": "SET NODE_ENV=production&& SET WDS_SCHEME=https&& webpack --config ./webpack/webpack.config.prod.js --watch --color --https",
-        "build:unix:dev:https": "export NODE_ENV=development && export WDS_SCHEME=https && webpack-dev-server --config ./webpack/webpack.config.dev.js --color --https",
-        "build:unix:prod:https": "export NODE_ENV=production && export WDS_SCHEME=https && webpack --config ./webpack/webpack.config.prod.js --watch --color --https"
+        "build:dev": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack/webpack.config.dev.js --color",
+        "build:prod": "cross-env NODE_ENV=production webpack --config ./webpack/webpack.config.prod.js --watch --color",
+        "build:dev:https": "cross-env NODE_ENV=development WDS_SCHEME=https webpack-dev-server --config ./webpack/webpack.config.dev.js --color --https",
+        "build:prod:profile": "cross-env NODE_ENV=production webpack --config ./webpack/webpack.config.prod.js --watch --color --profile --progress"
     },
     "author": "imwtr",
     "license": "MIT",
@@ -27,6 +23,7 @@
         "babel-preset-env": "^1.7.0",
         "babel-preset-react": "~6.16.0",
         "clean-webpack-plugin": "^0.1.17",
+        "cross-env": "^5.2.0",
         "css-loader": "^0.28.7",
         "echarts": "^3.8.5",
         "ejs-loader": "^0.3.1",
@@ -64,6 +61,7 @@
         "stylelint-formatter-pretty": "^1.0.3",
         "stylelint-webpack-plugin": "^0.10.5",
         "time-fix-plugin": "^2.0.3",
+        "uglifyjs-webpack-plugin": "1.2.7",
         "url-loader": "^1.0.1",
         "vinyl-file": "^3.0.0",
         "webpack": "4.12.2",
@@ -73,8 +71,7 @@
         "webpack-dev-server": "^3.1.4",
         "webpack-merge": "^4.1.0",
         "webpack-notifier": "^1.6.0",
-        "webrtc-adapter": "~2.1.0",
-        "uglifyjs-webpack-plugin": "1.2.7"
+        "webrtc-adapter": "~2.1.0"
     },
     "dependencies": {
         "expose-loader": "^0.7.3",

@@ -18,6 +18,7 @@ Some basic features
 - insert stylesheets and scripts to html file
 - html, css/scss, js/jsx code style quality check ([htmlhint](http://htmlhint.com/) [stylelint](https://stylelint.io/) [eslint](https://eslint.org/docs/user-guide/configuring))
 - building performance improving (thx for v4)
+- postcss for css compatibility
 
 ## More detail
 [v3 config introduction](http://www.cnblogs.com/imwtr/p/7786204.html)
@@ -43,15 +44,11 @@ Adjust it to whatever you like
 
 | Name               | Description          |
 | --------------     | -------------        |
-| npm run build:dll  | build dynamic link library, build this first if you have never built it (under dir /dll)  |
-| npm run build:dev  | build with development mode in windows system, using HMR  |
-| npm run build:prod  | build with production mode in windows system  |
-| npm run build:unix:dev  | build with development mode in unix(linux,os) system, using HMR  |
-| npm run build:unix:prod  | build with production mode in unix(linux,os) system   |
-| npm run build:dev:https  | build with development mode in windows system, using https and HMR |
-| npm run build:prod:https  | build with production mode in windows system, using https  |
-| npm run build:unix:dev:https  | build with development mode in unix(linux,os) system, using https and HMR  |
-| npm run build:unix:prod:https  | build with production mode in unix(linux,os) system, using https   |
+| npm run build:dll  | build dynamic link library, build this first if you have never built it (under dir /dll) |
+| npm run build:dev  | build with development mode, using HMR |
+| npm run build:prod  | build with production mode  |
+| npm run build:dev:https  | build with development mode, using https and HMR |
+| npm run build:prod:profile  | build with production mode and show building profile |
 
 
 
